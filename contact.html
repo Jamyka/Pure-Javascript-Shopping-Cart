@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="contact.css">
+    <title>Js Pro</title>
+</head>
+
+<body>
+    <nav class="container">
+        <header>
+            <a href="#">
+                <span style="--i:1">C</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">d</span>
+                <span style="--i:4">e</span>
+                <span style="--i:4">&nbsp;</span>
+                <span style="--i:5">H</span>
+                <span style="--i:6">u</span>
+                <span style="--i:7">n</span>
+                <span style="--i:8">t</span>
+                <span style="--i:9">e</span>
+                <span style="--i:10">r</span>
+                <span style="--i:11">s</span>
+            </a>
+        </header>
+        <div class="navlist shift">
+            <ul>
+                <li><a href="index.html"">Home</a></li>
+                <li><a href=" about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p id="cartMessage">0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="formContainer">
+            <h2>Contact Us Form</h2>
+            <ul id="errorMessage"></ul>
+            <div class="form">
+                <label for="username">Enter Your Full Name
+                </label>
+                <input type="text" id="username">
+                <label for="email">Enter Your Email
+                </label>
+                <input type="email" id="email">
+                <label for="phone">Enter Your Phone Number
+                </label>
+                <input type="number" id="phone">
+                <label for="message">Enter Your Message:
+                </label>
+                <textarea name="message" id="message" cols="52" rows="5"></textarea>
+            </div>
+            <button id="submit" onclick="sendData()">Submit</button>
+
+        </div>
+
+    </main>
+    <footer class="container">
+        <div class="footerDiv">
+            <ul class="socialList">
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3>Find Us</h3>
+                        <p style="color:gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p style="color: gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-at"></i></div>
+                    <div>
+                        <h3>Mail Us</h3>
+                        <p style="color:gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <marquee width="100%" direction="right" height="30%" behavior="scroll">
+                    This Site Was Made With 😍 For ITI.
+                </marquee>
+                <button id="topBtn" onclick="backToTop()">
+                    <i class="fas fa-arrow-up" style="font-size: larger; transform: scale(1.2);"></i>
+                </button>
+                <button id="topBtn2" onclick="backToTop()">
+                    <p id="cartMessage2">0</p>
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <!-- voulentering activitis and their benifits  -->
+    <script src="contact.js"></script>
+</body>
+
+</html>

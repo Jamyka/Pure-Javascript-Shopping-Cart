@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="about.css">
+    <title>Js Pro</title>
+</head>
+
+<body>
+    <nav class="container">
+        <header>
+            <a href="#">
+                <span style="--i:1">C</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">d</span>
+                <span style="--i:4">e</span>
+                <span style="--i:4">&nbsp;</span>
+                <span style="--i:5">H</span>
+                <span style="--i:6">u</span>
+                <span style="--i:7">n</span>
+                <span style="--i:8">t</span>
+                <span style="--i:9">e</span>
+                <span style="--i:10">r</span>
+                <span style="--i:11">s</span>
+            </a>
+        </header>
+        <div class="navlist shift">
+            <ul>
+                <li><a href="index.html"">Home</a></li>
+                <li><a href=" about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p id="cartMessage">0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="categories">
+            <div class="card">
+                <img src="1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum ipsam accusamus sunt
+                    itaque nobis inventore a suscipit? Repudiandae dignissimos nisi doloribus vero sint tempore ad quos?
+                    Nemo voluptatum perspiciatis esse minus praesentium ipsa eaque consequatur inventore, repellat quo
+                    voluptate dolore qui harum quidem illum error tempora autem officia quos quaerat distinctio earum.
+                    Minima praesentium facilis sint excepturi natus laborum ab corrupti debitis atque. Doloremque
+                    tempore fugit dolores, adipisci, perferendis maxime cupiditate optio eius ad aliquid, a atque magni
+                    dolorem nihil quasi ab? Aspernatur error tempora consequatur ut totam optio enim itaque, maxime qui
+                    nobis? Fuga velit voluptas ipsum illum?</p>
+            </div>
+        </div>
+        <div class="ocordion">
+            <div class="item">
+                <p>First Item</p>
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+            <p class="content hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+                non atque
+                deleniti
+                facilis,
+                eveniet temporibus! Laboriosam, iusto culpa aperiam quaerat voluptates voluptatibus facilis sapiente
+                officiis aliquid pariatur in animi? Nesciunt?</p>
+            <div class="item">
+                <p>Second Item</p>
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+            <p class="content hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis non atque
+                deleniti
+                facilis,
+                eveniet
+                temporibus! Laboriosam, iusto culpa aperiam quaerat voluptates voluptatibus facilis sapiente officiis
+                aliquid
+                pariatur in animi? Nesciunt?</p>
+            <div class="item">
+                <p>Third Item</p>
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+            <p class="content hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis non atque
+                deleniti
+                facilis,
+                eveniet
+                temporibus! Laboriosam, iusto culpa aperiam quaerat voluptates voluptatibus facilis sapiente officiis
+                aliquid
+                pariatur in animi? Nesciunt?</p>
+            <div class="item">
+                <p>Fourth Item</p>
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+            <p class="content hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis non atque
+                deleniti
+                facilis,
+                eveniet
+                temporibus! Laboriosam, iusto culpa aperiam quaerat voluptates voluptatibus facilis sapiente officiis
+                aliquid
+                pariatur in animi? Nesciunt?</p>
+
+        </div>
+    </main>
+    <footer class="container">
+        <div class="footerDiv">
+            <ul class="socialList">
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3>Find Us</h3>
+                        <p style="color:gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p style="color: gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-at"></i></div>
+                    <div>
+                        <h3>Mail Us</h3>
+                        <p style="color:gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <marquee width="100%" direction="right" height="30%" behavior="scroll">
+                    This Site Was Made With 😍 For ITI.
+                </marquee>
+                <button id="topBtn" onclick="backToTop()">
+                    <i class="fas fa-arrow-up" style="font-size: larger; transform: scale(1.2);"></i>
+                </button>
+                <button id="topBtn2" onclick="backToTop()">
+                    <p id="cartMessage2">0</p>
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <!-- voulentering activitis and their benifits  -->
+    <script src="about.js"></script>
+</body>
+
+</html>

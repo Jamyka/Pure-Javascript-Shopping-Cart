@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Js Pro</title>
+</head>
+
+<body onload="createShoes()">
+    <nav class="container">
+        <header>
+            <a href="#">
+                <span style="--i:1">C</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">d</span>
+                <span style="--i:4">e</span>
+                <span style="--i:4">&nbsp;</span>
+                <span style="--i:5">H</span>
+                <span style="--i:6">u</span>
+                <span style="--i:7">n</span>
+                <span style="--i:8">t</span>
+                <span style="--i:9">e</span>
+                <span style="--i:10">r</span>
+                <span style="--i:11">s</span>
+            </a>
+        </header>
+        <div class="navlist shift">
+            <ul>
+                <!-- <li><a href="index.html"">Home</a></li> -->
+                <li onclick="home()">Home</li>
+
+                <!-- <li><a href=" about.html">About Us</a></li> -->
+                <!-- <li><a href=" about.html">About Us</a></li> -->
+
+                <!-- <li><a href="contact.html">Contact Us</a></li> -->
+                <li onclick="contact()">Contact Us</li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p id="cartMessage">0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="container slider">
+            <div id="image1" class="img">
+                <img src="1.jpg" />
+            </div>
+            <div id="image2" class="img">
+                <img src="2.jpg" />
+            </div>
+            <div id="image3" class="img">
+                <img src="3.jpg" />
+            </div>
+            <div class="left" onclick="plusSlides(-1)"></div>
+            <div class="right" onclick="plusSlides(1)"></div>
+        </section>
+        <section class="container introduction">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste voluptatum neque illo eos, ut, eum,
+                dolore quidem aspernatur modi consequatur amet deleniti consequuntur labore tenetur quae ex itaque esse.
+                Asperiores optio repellendus nesciunt, commodi iusto praesentium iure, corrupti quibusdam officia ipsa
+                dolorem facilis natus autem vel rem deserunt modi pariatur atque nisi exercitationem quo nam tempora
+                voluptas? Vel eligendi minima ipsam aut voluptatum nam officiis nihil? Sit vitae, voluptate corrupti sed
+                maxime, nostrum officia modi cumque eius a, impedit molestias at ex! Tempora repudiandae delectus eum.
+                Omnis
+                voluptatem nesciunt non ipsa dolore, magni consectetur quibusdam repellat inventore! Ex, velit?
+            </div>
+        </section>
+        <section class="container categories">
+            <div class="buttonsContainer">
+                <button class="uiButtons active" id="shoesBtn">Shoes</button>
+                <button class="uiButtons" id="clothesBtn">Clothes</button>
+                <button class="uiButtons" id="gadgetsBtn">Gadgets</button>
+                <button class="uiButtons" id="skincareBtn">Skin Care</button>
+            </div>
+            <div class="cardsContainer">
+
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <div class="introduction">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque perferendis rem eaque dolores debitis
+                ad dignissimos incidunt rerum et nesciunt quis sunt quo, reprehenderit aliquam alias quia vel, quae est,
+                explicabo sit! In optio reiciendis accusantium laudantium, modi reprehenderit, corrupti iusto explicabo
+                vero cupiditate qui blanditiis eveniet facilis et alias. Nostrum ea sit delectus dolores mollitia
+                architecto aspernatur quasi perspiciatis! Aliquid odit eum voluptas! Fuga, eum itaque perspiciatis
+                facere ipsam qui, libero adipisci veritatis, expedita aspernatur repudiandae necessitatibus.
+                Necessitatibus obcaecati, sit voluptatum quas blanditiis vel voluptatibus aliquid dolorem perferendis
+                recusandae est incidunt in deleniti assumenda inventore. Excepturi provident officiis debitis!
+            </p>
+        </div>
+        <div class="footerDiv">
+            <ul class="socialList">
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3>Find Us</h3>
+                        <p style="color:gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p style="color: gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+                <li>
+                    <div style="color: #91640fcb;"><i class="fas fa-at"></i></div>
+                    <div>
+                        <h3>Mail Us</h3>
+                        <p style="color:gray;">1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <marquee width="100%" direction="right" height="30%" behavior="scroll">
+                    This Site Was Made With 😍 For ITI.
+                </marquee>
+                <button id="topBtn" onclick="backToTop()">
+                    <i class="fas fa-arrow-up" style="font-size: larger; transform: scale(1.2);"></i>
+                </button>
+                <button id="topBtn2" onclick="backToTop()">
+                    <p id="cartMessage2">0</p>
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <!-- voulentering activitis and their benifits  -->
+    <script src="index.js"></script>
+</body>
+
+</html>
